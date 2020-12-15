@@ -635,9 +635,13 @@ footer .socials-link {
 }
 
 .projects-list-item:hover .projects-thumb::after,
-.projects-list-item:focus .projects-thumb::after,
-.projects-list-item:hover .projects-description,
-.projects-list-item:focus .projects-description {
+.projects-list-item:hover .projects-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects-list-link:focus .projects-thumb::after,
+.projects-list-link:focus .projects-description {
   opacity: 1;
   transform: translateY(0);
 }
