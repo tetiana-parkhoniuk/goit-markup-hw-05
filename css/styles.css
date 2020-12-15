@@ -612,7 +612,7 @@ footer .socials-link {
   width: 100%;
   height: 100%;
 
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
 
   transition: opacity 250ms var(--timing-function),
@@ -635,7 +635,9 @@ footer .socials-link {
 }
 
 .projects-list-item:hover .projects-thumb::after,
-.projects-list-item:hover .projects-description {
+.projects-list-item:focus .projects-thumb::after,
+.projects-list-item:hover .projects-description,
+.projects-list-item:focus .projects-description {
   opacity: 1;
   transform: translateY(0);
 }
